@@ -1,0 +1,61 @@
+<!doctype html>
+<!--
+  launch-oss og-card (1200x630) for orion-phone. Serve over python3 -m http.server and
+  screenshot via the Playwright MCP at CSS scale into public/og-card.png.
+  Claims are qualitative, from the README.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1200px; height:630px; overflow:hidden; }
+  body {
+    width:1200px; height:630px;
+    background:
+      radial-gradient(1100px 500px at 78% -10%, rgba(230,130,73,0.16), transparent 60%),
+      linear-gradient(160deg, #020B29 0%, #07143A 55%, #020B29 100%);
+    color:#f9fafb; font-family:'Inter',sans-serif; padding:74px 80px;
+    display:flex; flex-direction:column; justify-content:space-between; position:relative;
+  }
+  .top { display:flex; align-items:center; gap:14px; }
+  .dot { width:13px; height:13px; border-radius:50%; }
+  .prompt { font-family:'JetBrains Mono',monospace; font-weight:500; font-size:23px; color:#9fb0c9; margin-left:8px; }
+  .prompt .cmd { color:#E68249; }
+  h1 { font-family:'JetBrains Mono',monospace; font-weight:700; font-size:78px; letter-spacing:-2px; line-height:1.0; margin-top:30px; color:#fff; }
+  h1 .accent { color:#E68249; }
+  .tagline { font-size:35px; font-weight:500; line-height:1.32; color:#cbd5e1; margin-top:26px; max-width:1000px; }
+  .features { margin-top:34px; display:flex; gap:16px; }
+  .feature { padding:18px 22px; border:1px solid #284572; border-radius:12px;
+    font-size:22px; color:#cbd5e1; background:rgba(7,20,58,0.65); }
+  .foot { display:flex; align-items:center; justify-content:space-between; }
+  .cred { font-size:23px; font-weight:500; color:#94a3b8; }
+  .cred b { color:#E68249; font-weight:600; }
+  .url { font-family:'JetBrains Mono',monospace; font-size:21px; color:#64748b; white-space:nowrap; }
+</style>
+</head>
+<body>
+  <div>
+    <div class="top">
+      <span class="dot" style="background:#ef4444"></span>
+      <span class="dot" style="background:#f59e0b"></span>
+      <span class="dot" style="background:#10b981"></span>
+      <span class="prompt">$ <span class="cmd">orion-phone lease a --holder=agent-1</span></span>
+    </div>
+    <h1>orion-<span class="accent">phone</span></h1>
+    <div class="tagline">Give your agent its own phone. Android phones for cooperating AI agents.</div>
+    <div class="features">
+      <span class="feature">Exclusive leases</span>
+      <span class="feature">Locked tier</span>
+      <span class="feature">Audit trail</span>
+    </div>
+  </div>
+  <div class="foot">
+    <div class="cred"><b>MIT · MCP server + CLI</b> · any MCP client</div>
+    <div class="url">danmercede.com/works/orion-phone</div>
+  </div>
+</body>
+</html>

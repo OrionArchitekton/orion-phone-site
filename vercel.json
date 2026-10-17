@@ -1,0 +1,30 @@
+{
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/works/orion-phone",
+      "destination": "/works/orion-phone/",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/works/orion-phone/",
+      "destination": "/"
+    },
+    {
+      "source": "/works/orion-phone/:path*",
+      "destination": "/:path*"
+    }
+  ]
+}

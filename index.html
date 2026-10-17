@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.danmercede.com/works/orion-phone/" />
+  <title>orion-phone: Give your agent its own phone</title>
+  <meta name="description"
+    content="orion-phone is an MIT-licensed tool that runs Android phones (emulators) for AI agents, driven through an MCP server or a CLI: one agent per phone, a locked tier that waits for unlock on a trusted host, and an audit record of every action." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="orion-phone" />
+  <meta property="og:title" content="orion-phone: Give your agent its own phone" />
+  <meta property="og:description"
+    content="Android phones (emulators) for AI agents, through an MCP server or a CLI: one agent per phone, a locked tier for cooperative tool callers on a trusted host, and a record of every action. MIT licensed." />
+  <meta property="og:url" content="https://www.danmercede.com/works/orion-phone/" />
+  <meta property="og:image" content="https://www.danmercede.com/works/orion-phone/og-card.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="orion-phone: give your agent its own phone" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@danmercede" />
+  <meta name="twitter:creator" content="@danmercede" />
+  <meta name="twitter:title" content="orion-phone: Give your agent its own phone" />
+  <meta name="twitter:description"
+    content="Android phones (emulators) for AI agents, through an MCP server or a CLI: one agent per phone, a locked tier for cooperative tool callers on a trusted host, and a record of every action. MIT licensed." />
+  <meta name="twitter:image" content="https://www.danmercede.com/works/orion-phone/og-card.png" />
+  <meta name="twitter:image:alt" content="orion-phone: give your agent its own phone" />
+
+  <!-- Brand favicons (Dan Mercede logo pack, DM mark) -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Structured data: SoftwareSourceCode + SoftwareApplication for the tool,
+       backlinking author/publisher to the hub Person (danmercede.com/#person).
+       Static so crawlers see it without executing JS. -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://www.danmercede.com/works/orion-phone/#software",
+          "name": "orion-phone",
+          "description": "Android phones (emulators) that AI agents drive through an MCP server or a CLI, with leases, a locked tier that waits for unlock on a trusted host, and an audit record of every action.",
+          "url": "https://www.danmercede.com/works/orion-phone/",
+          "codeRepository": "https://github.com/OrionArchitekton/orion-phone-oss",
+          "programmingLanguage": "Python",
+          "runtimePlatform": "Python 3.11+",
+          "license": "https://opensource.org/licenses/MIT",
+          "author": { "@id": "https://www.danmercede.com/#person" },
+          "maintainer": { "@id": "https://www.danmercede.com/#person" }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://www.danmercede.com/works/orion-phone/#application",
+          "name": "orion-phone",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "Linux with systemd and KVM, or Windows through WSL2",
+          "description": "A command-line tool and MCP server that runs Android emulators as phones for AI agents: an agent leases a phone, reads its screen, taps, types and opens apps, and a locked phone does nothing until its owner unlocks it.",
+          "url": "https://www.danmercede.com/works/orion-phone/",
+          "softwareVersion": "0.2.0",
+          "isAccessibleForFree": true,
+          "license": "https://opensource.org/licenses/MIT",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "author": { "@id": "https://www.danmercede.com/#person" },
+          "publisher": { "@id": "https://www.danmercede.com/#person" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.danmercede.com/#person",
+          "name": "Dan Mercede",
+          "url": "https://www.danmercede.com"
+        }
+      ]
+    }
+  </script>
+
+  <!-- Fonts: Inter for UI, JetBrains Mono for code/terminal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind is bundled at build time (compiled stylesheet emitted by Vite);
+       no render-blocking CDN JIT compiler. Base/print styles live in index.css. -->
+</head>
+
+<body class="bg-white text-neutral-900 antialiased">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
