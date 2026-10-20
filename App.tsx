@@ -1,3 +1,4 @@
+import { ProductDemo } from './ProductDemo';
 import React, { useState } from 'react';
 import { PRODUCT_DATA } from './constants';
 import type { DemoLine } from './types';
@@ -116,6 +117,7 @@ const App: React.FC = () => {
             </a>
           </div>
         </header>
+      <ProductDemo />
 
         {/* 2. The problem */}
         <section>
