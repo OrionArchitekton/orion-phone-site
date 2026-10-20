@@ -217,7 +217,7 @@ const App: React.FC = () => {
           </ul>
           <div className="flex flex-col sm:flex-row justify-between">
             <p>{footerNote}</p>
-            <p>&copy; {new Date().getFullYear()} Dan Mercede</p>
+            <p suppressHydrationWarning>&copy; {new Date().getFullYear()} Dan Mercede</p>
           </div>
         </footer>
       </main>
