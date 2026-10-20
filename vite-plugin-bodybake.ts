@@ -1,3 +1,6 @@
+import React from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
+import { ProductDemo } from './ProductDemo';
 import type { Plugin } from 'vite';
 import { PRODUCT_DATA } from './constants';
 import type { ProductData } from './types';
@@ -75,12 +78,13 @@ export function renderBakedBody(data: ProductData): string {
   // provides (no-JS / pre-hydration a11y parity).
   return [
     `<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-4 focus:left-4 focus:rounded focus:bg-neutral-900 focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white focus:no-underline">Skip to main content</a>`,
-    `<main id="main-content" tabindex="-1">`,
+    `<main id="main-content" tabindex="-1" class="max-w-3xl mx-auto px-6 py-12 md:py-20">`,
     `<header>`,
     `<h1>${escapeHtml(name)}</h1>`,
     `<p>${escapeHtml(tagline)}</p>`,
     `<p>${escapeHtml(credibility)}</p>`,
     `</header>`,
+    renderToStaticMarkup(React.createElement(ProductDemo)),
     `<section>`,
     `<h2>${escapeHtml(problem.heading)}</h2>`,
     `<p>${escapeHtml(problem.body)}</p>`,
@@ -90,7 +94,7 @@ export function renderBakedBody(data: ProductData): string {
     `<h2>${escapeHtml(quickstart.heading)}</h2>`,
     `<p>${escapeHtml(quickstart.intro)}</p>`,
     `<p>${escapeHtml(installBlock.title)}${installBlock.note ? ` (${escapeHtml(installBlock.note)})` : ''}:</p>`,
-    `<pre><code>${escapeHtml(installBlock.command)}</code></pre>`,
+    `<pre class="overflow-x-auto"><code>${escapeHtml(installBlock.command)}</code></pre>`,
     `</section>`,
     `<section>`,
     `<h2>Command surface</h2>`,

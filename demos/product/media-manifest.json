@@ -1,0 +1,28 @@
+{
+  "slug": "orion-phone",
+  "demonstrated_version": "v0.2.0",
+  "source_name": "g04-review-v1.mp4",
+  "source_sha256": "9ce60ffa614db2b78bcb42328e55d5deccfbc4bde6cd966be1c2b9ebbc54b2a6",
+  "ranges_seconds": [
+    [
+      358.65,
+      375.0
+    ],
+    [
+      382.28,
+      395.6
+    ],
+    [
+      419.993,
+      439.15
+    ]
+  ],
+  "duration_seconds": 48.833333,
+  "voice": "Original recorded Dan narration, unchanged within excerpts",
+  "files": {
+    "orion-phone-demo.vtt": "e7648f9fe98e5c915b2529082ab9ff8879e2651ecf7bc3f8c9de66b484392180",
+    "orion-phone-demo.jpg": "4bf2b5c96df19b20905e53336924256497be5732ba21032f6390f08e0e4cefdf",
+    "orion-phone-demo.mp4": "88ab7d9b4e8e246d3eee13b756361b4b532968ac7299a5bb02e20dfd6dc5f0d6"
+  },
+  "caption_note": "Original guide captions retimed to the excerpt; words outside cut boundaries removed after an independent ASR check."
+}

@@ -1,0 +1,76 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.417
+Give our
+
+00:00:00.417 --> 00:00:02.637
+worker the clock job. I want one
+
+00:00:02.637 --> 00:00:05.377
+test alarm labeled Guide demo. I want
+
+00:00:05.377 --> 00:00:07.157
+it switched off, and I want that
+
+00:00:07.157 --> 00:00:09.357
+agent to check it and then delete
+
+00:00:09.357 --> 00:00:11.197
+it. If we're showing a direct command
+
+00:00:11.197 --> 00:00:13.277
+in a terminal, we'll label it as
+
+00:00:13.277 --> 00:00:14.857
+my command so you can tell which
+
+00:00:14.857 --> 00:00:16.350
+part of the agent actually did.
+
+00:00:16.350 --> 00:00:18.070
+I ask for the UI, I get
+
+00:00:18.070 --> 00:00:19.670
+the screen on as a text, okay?
+
+00:00:19.850 --> 00:00:21.490
+It shows up with labels in the
+
+00:00:21.490 --> 00:00:23.090
+center of each element. So I have
+
+00:00:23.090 --> 00:00:25.590
+the agent find Add alarm and then
+
+00:00:25.590 --> 00:00:27.690
+use that point from the screen. It
+
+00:00:27.690 --> 00:00:29.670
+just read Okay, you follow along.
+
+00:00:29.670 --> 00:00:32.110
+on the guide, you'll see in the
+
+00:00:32.110 --> 00:00:33.930
+list that we've checked that it switched
+
+00:00:33.930 --> 00:00:36.030
+off. That's the result I asked for.
+
+00:00:36.350 --> 00:00:37.730
+So we can show it before the
+
+00:00:37.730 --> 00:00:41.644
+agent cleans up. Then I have it
+
+00:00:41.644 --> 00:00:43.504
+delete the test alarm. Read the list
+
+00:00:43.504 --> 00:00:45.184
+again and check that the label is
+
+00:00:45.184 --> 00:00:47.804
+gone. I want the cleanup checked as
+
+00:00:47.804 --> 00:00:48.827
+well.
