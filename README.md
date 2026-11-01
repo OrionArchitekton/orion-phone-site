@@ -1,5 +1,7 @@
 # orion-phone-site
 
+Part of [Cosmocrat OS](https://www.cosmocrat.ai/tools#orion-phone).
+
 Vite/React microsite for the `orion-phone` project page at
 `https://www.danmercede.com/works/orion-phone/`.
 

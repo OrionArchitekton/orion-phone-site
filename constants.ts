@@ -172,4 +172,6 @@ export const PRODUCT_DATA: ProductData = {
   ],
 
   footerNote: 'Phone tool and site code: MIT. Built by Dan Mercede.',
+
+  suite: { label: 'Cosmocrat OS', url: 'https://www.cosmocrat.ai/tools#orion-phone' },
 };
