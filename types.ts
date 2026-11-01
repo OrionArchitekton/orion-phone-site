@@ -59,4 +59,5 @@ export interface ProductData {
   };
   links: Link[];
   footerNote: string;
+  suite: Link;
 }

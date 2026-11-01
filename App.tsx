@@ -76,6 +76,7 @@ const App: React.FC = () => {
     differentiators,
     links,
     footerNote,
+    suite,
   } = PRODUCT_DATA;
 
   return (
@@ -223,7 +224,7 @@ const App: React.FC = () => {
             <p>{footerNote}</p>
             <p suppressHydrationWarning>&copy; {new Date().getFullYear()} Dan Mercede</p>
           </div>
-          <p>Part of <a href="https://www.cosmocrat.ai/tools#orion-phone" target="_blank" rel="noopener noreferrer" className="text-neutral-700 underline decoration-1 decoration-neutral-300 hover:decoration-copper-dark underline-offset-4 transition-all">Cosmocrat OS<span className="sr-only"> (opens in a new tab)</span></a>.</p>
+          <p>Part of <a href={suite.url} target="_blank" rel="noopener noreferrer" className="text-neutral-700 underline decoration-1 decoration-neutral-300 hover:decoration-copper-dark underline-offset-4 transition-all">{suite.label}<span className="sr-only"> (opens in a new tab)</span></a>.</p>
         </footer>
       </main>
     </div>
