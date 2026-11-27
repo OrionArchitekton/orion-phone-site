@@ -64,6 +64,11 @@ export const PRODUCT_DATA: ProductData = {
         command: ['[mcp_servers.orion-phone]', 'command = "orion-phone-mcp"'].join('\n'),
       },
       {
+        title: 'Or Gemini CLI (extension)',
+        note: 'Listed in the Official MCP Registry as io.github.OrionArchitekton/orion-phone',
+        command: 'gemini extensions install https://github.com/OrionArchitekton/orion-phone-oss',
+      },
+      {
         title: 'Or drive a phone from a shell',
         command: [
           'H=--holder=my-agent-session',
